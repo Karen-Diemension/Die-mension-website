@@ -1,7 +1,9 @@
 # Document Assets Required
 
-Please add the following document to this folder:
+Upload the following PDF files from the original Die-Mension website to this folder:
 
-- `application.pdf` - Employee application form for job applicants to download
+- `Line Card Tri.pdf` - Line card tri-fold brochure (capabilities overview)
+- `ApplicationforEmploymentpg1,2,3,4.pdf` - Employment application form (4 pages)
+- `ISO 9001 2015.pdf` - ISO certification document
 
-This PDF should be your company's official employment application form.
+All PDF files should be placed directly in `/public/documents/` directory with the exact filenames listed above.

@@ -1,23 +1,29 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TopInfoBar from './components/TopInfoBar';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Manufacturing from './pages/Manufacturing';
-import Equipment from './pages/Equipment';
+import EquipmentList from './pages/EquipmentList';
+import ContactUs from './pages/ContactUs';
 import Careers from './pages/Careers';
-import Contact from './pages/Contact';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white flex flex-col">
+        <TopInfoBar />
         <Navigation />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/manufacturing" element={<Manufacturing />} />
-          <Route path="/equipment" element={<Equipment />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/manufacturing" element={<Manufacturing />} />
+            <Route path="/equipment-list" element={<EquipmentList />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/careers" element={<Careers />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
     </Router>
   );

@@ -1,40 +1,27 @@
 # Image Assets Required
 
-Please replace the following placeholder image paths with your actual images:
+Upload the following image files from the original Die-Mension website to this folder:
 
-## General
-- `logo.png` - Company logo (used in various places)
+## Logo
+- `die-mension-corporation-logo.gif` - Company logo for navigation
 
 ## Home Page
-- `hero.jpg` - Main hero image showing Die-Mension building/facility
-- `team-1.jpg` - Team member photo (John Smith)
-- `team-2.jpg` - Team member photo (Sarah Johnson)
-- `team-3.jpg` - Team member photo (Michael Chen)
-- `team-4.jpg` - Team member photo (Emily Davis)
+- `index-header.jpg` - HQ building photo for hero section
+- `Profile Pic-0003.jpg` - Karen Thompson photo
+- `Rick Thompson picture.jpg` - Rick Thompson photo
 
-## Manufacturing Page
-- `manufacturing-hero.jpg` - Hero image for manufacturing page
-- `cnc-machine.jpg` - CNC machining equipment/process
-- `edm-machine.jpg` - EDM equipment/process
-- `reverse-engineering.jpg` - Reverse engineering equipment/process
+## Certification Logos
+- `footer-wbenc-logo.jpg` - WBENC certification logo
+- `footer-iso-logo.jpg` - ISO 9001:2015 logo
+- `SCB ISO 9001 Mark.jpg` - SCB ISO mark
 
-## Equipment Page
-- `equipment-hero.jpg` - Hero image for equipment page
-- `equipment-1.jpg` through `equipment-12.jpg` - Individual equipment photos
-  - 1-6: Tool Room equipment
-  - 7-12: Press Room equipment
+## Hero Images (Stock Photos)
+- `manufacturing-hero.jpg` - Stock machining image for Manufacturing page
+- `equipment-hero.jpg` - Stock shop image for Equipment List page
+- `contact-hero.jpg` - Stock tooling image for Contact Us page
 
-## Careers Page
-- `careers-hero.jpg` - Hero image for careers page (team working/facility)
+## Optional Equipment Photos
+- `Okuma pic.jpg` - Okuma machine photo
+- `CMM Pic.jpg` - CMM inspection photo
 
-## Contact Page
-- `contact-hero.jpg` - Hero image for contact page
-
-## Recommended Image Specifications
-- Hero images: 1920x1080px or higher
-- Team photos: 800x800px (square format)
-- Equipment photos: 1200x900px (4:3 ratio)
-- Format: JPG for photos
-- Quality: High resolution for professional appearance
-
-All images should align with the "Precision Industrial" design aesthetic.
+All image files should be placed directly in `/public/images/` directory with the exact filenames listed above.

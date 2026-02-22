@@ -4,12 +4,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        'near-black': '#1B1B1B',
-        'accent-gold': '#FCCF8A',
+        gold: {
+          DEFAULT: '#FCCF8A',
+          light: '#F8CE8E',
+          dark: '#8F7145',
+          darker: '#8A6C3F',
+        },
+        dm: {
+          dark: '#1B1B1B',
+          darker: '#161616',
+          body: '#5E5E5E',
+          muted: '#808080',
+          warm: '#433C32',
+        },
+        surface: {
+          DEFAULT: '#FFFFFF',
+          off: '#FAF9F5',
+          light: '#F6F6F6',
+        },
+        separator: '#E2E2E2',
       },
       fontFamily: {
-        'heading': ['Cinzel', 'serif'],
-        'body': ['Source Sans 3', 'sans-serif'],
+        cinzel: ['Cinzel', 'Georgia', 'serif'],
+        source: ['Source Sans Pro', 'Arial', 'sans-serif'],
+      },
+      letterSpacing: {
+        button: '1px',
       },
     },
   },

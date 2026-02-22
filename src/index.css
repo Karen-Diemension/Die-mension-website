@@ -4,10 +4,14 @@
 
 @layer base {
   body {
-    @apply font-body text-near-black bg-white;
+    @apply font-source text-dm-body bg-white;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+  h1, h2 {
+    @apply font-cinzel font-normal;
+  }
+
+  h3 {
+    @apply font-source font-normal;
   }
 }
