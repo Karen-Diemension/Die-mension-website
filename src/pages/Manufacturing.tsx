@@ -21,6 +21,25 @@ export default function Manufacturing() {
             Die-Mension is a one-source shop for your complete tooling design, build, repair and metal stamping needs.
           </p>
 
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="space-y-4">
+              <img
+                src="/images/Okuma-pic.jpg"
+                alt="Okuma Genos M560-V Machining Center"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+              <p className="text-center text-dm-body font-semibold">Okuma Genos M560-V Machining Center</p>
+            </div>
+            <div className="space-y-4">
+              <img
+                src="/images/CMM-Pic.jpg"
+                alt="Brown & Sharpe CMM Inspection"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+              <p className="text-center text-dm-body font-semibold">Brown & Sharpe CMM Inspection</p>
+            </div>
+          </div>
+
           <div className="flex items-center gap-4 mb-8">
             <div className="flex-1 h-px bg-separator"></div>
             <h2 className="text-3xl text-dm-dark text-center">TOOL BUILD, REPAIR & STAMPING SERVICES</h2>

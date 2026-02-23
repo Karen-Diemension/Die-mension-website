@@ -21,12 +21,14 @@ This document shows all image references used throughout the Die-Mension website
 - **SCB ISO 9001 Mark**: `/images/SCB-ISO-9001-Mark.jpg`
   - Used in: Home page (Our Certifications section)
 
-### Equipment Photos (Optional)
+### Equipment Photos
 - **Okuma Machine**: `/images/Okuma-pic.jpg`
-  - Available but not currently used in layout
+  - Used in: Manufacturing page (equipment showcase section)
+  - Caption: "Okuma Genos M560-V Machining Center"
 
 - **CMM Inspection**: `/images/CMM-Pic.jpg`
-  - Available but not currently used in layout
+  - Used in: Manufacturing page (equipment showcase section)
+  - Caption: "Brown & Sharpe CMM Inspection"
 
 ### Home Page Hero
 - **HQ Building/Header**: `/images/Gemini_Generated_Image_index-header.png`
@@ -81,9 +83,18 @@ This document shows all image references used throughout the Die-Mension website
 - Height: 96px (h-24)
 - Object-fit: contain (preserves logo proportions)
 
+## Logo
+
+### Gemini Generated Logo
+- **File**: `/images/Gemini_Generated_Image_logo.pdf`
+- **Status**: PDF format cannot be used directly in web navigation
+- **Current Solution**: Text-based logo used in navigation ("DIE-MENSION")
+- **To Use the Gemini Logo**: Convert PDF to PNG or SVG format, then update Navigation.tsx
+
 ## Notes
 
 1. All hero images use a dark overlay (bg-dm-dark with opacity 50-60%) for text readability
 2. Stock images from Pexels are production-ready and don't require attribution
 3. All local images should maintain their original filenames as shown above
-4. Equipment photos (Okuma, CMM) are available but not currently integrated into the layout - can be added to Manufacturing or Equipment pages if desired
+4. Machine photos (Okuma and CMM) are now featured on the Manufacturing page
+5. The Gemini logo PDF needs to be converted to PNG/SVG format to be used in the navigation

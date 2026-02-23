@@ -19,11 +19,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
-            <img
-              src="/images/die-mension-corporation-logo.gif"
-              alt="Die-Mension Corporation"
-              className="h-12"
-            />
+            <div className="font-serif text-2xl font-bold text-dm-dark tracking-tight">
+              <span className="text-dm-darker">DIE</span>
+              <span className="text-dm-warm">-</span>
+              <span className="text-dm-darker">MENSION</span>
+            </div>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
