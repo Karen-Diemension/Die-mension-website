@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail } from 'lucide-react';
 
 export default function TopInfoBar() {
   return (
-    <div className="bg-gray-900 py-2 px-6">
+    <div className="bg-[#1a1f2e] py-2 px-6">
       <div className="max-w-7xl mx-auto flex items-center justify-between text-xs text-gray-300">
         <div className="flex items-center gap-1">
           <MapPin className="w-3 h-3" />

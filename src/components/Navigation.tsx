@@ -15,7 +15,7 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-[#2d2d2d] sticky top-0 z-50 shadow-md">
+    <nav className="bg-[#1a1f2e] sticky top-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <Link to="/">
@@ -24,10 +24,6 @@ export default function Navigation() {
                 src="/images/Nanobanana-logo.png"
                 alt="Die-Mension Corporation"
                 className="h-12"
-                style={{
-                  mixBlendMode: 'screen',
-                  filter: 'brightness(1.1) contrast(1.1)'
-                }}
               />
             </div>
           </Link>
@@ -58,7 +54,7 @@ export default function Navigation() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#2d2d2d]">
+        <div className="md:hidden bg-[#1a1f2e]">
           <div className="px-6 py-4 space-y-3">
             {navItems.map((item) => (
               <Link
