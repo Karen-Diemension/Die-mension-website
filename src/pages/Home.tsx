@@ -22,7 +22,7 @@ export default function Home() {
         <img
           src="/images/IMG_9770.jpg"
           alt="Die-Mension Corporation Headquarters"
-          className="w-full h-full object-cover object-[center_bottom]"
+          className="w-full h-full object-contain object-center bg-gray-100"
         />
       </section>
 
