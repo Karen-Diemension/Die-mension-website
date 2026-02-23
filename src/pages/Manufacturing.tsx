@@ -5,7 +5,7 @@ export default function Manufacturing() {
     <div>
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          src="/images/Gemini_Generated_Image_92kei592kei592ke_(1).png"
           alt="Manufacturing Solutions"
           className="absolute inset-0 w-full h-full object-cover"
         />
