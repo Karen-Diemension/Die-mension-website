@@ -20,7 +20,7 @@ export default function Home() {
     <div>
       <section className="relative h-[70vh] flex items-end overflow-hidden">
         <img
-          src="/images/IMG_9770.jpeg"
+          src="/images/IMG_9770.jpg"
           alt="Die-Mension Corporation Headquarters"
           className="absolute inset-0 w-full h-full object-cover"
         />
