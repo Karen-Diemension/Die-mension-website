@@ -35,7 +35,7 @@ export default function Home() {
             <div className="h-1 w-20 bg-gradient-to-r from-[#4a90a4] to-[#3d7a8b] rounded-full mb-4"></div>
           </div>
           <p className="text-white/90 text-lg leading-relaxed md:col-span-4">
-            Expert tool and die design, build & repair, precision machining, and metal stampings
+            TOOL AND DIE DESIGN, BUILD & REPAIR , MACHINED DETAILS AND, METAL STAMPINGS
           </p>
           <div className="md:col-span-3 flex justify-end">
             <button className="btn-primary group whitespace-nowrap">
