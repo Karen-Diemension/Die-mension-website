@@ -26,17 +26,19 @@ export default function Home() {
         />
       </section>
 
-      <section className="bg-[#2d2d2d] py-8 px-6">
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-8">
-          <h1 className="text-white text-3xl font-bold whitespace-nowrap">
+      <section className="bg-[#2d2d2d] py-12 px-8">
+        <div className="max-w-7xl mx-auto flex items-center gap-12">
+          <h1 className="text-white text-3xl font-bold w-[40%]">
             Precision Engineering Since 1986
           </h1>
-          <p className="text-white/90 text-base flex-1">
+          <p className="text-white/90 text-lg leading-relaxed w-[40%]">
             Expert tool and die design, build & repair, precision machining, and metal stampings
           </p>
-          <button className="bg-[#4a90a4] hover:bg-[#3d7a8b] text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-lg whitespace-nowrap">
-            Request a Quote
-          </button>
+          <div className="w-[20%] flex justify-end">
+            <button className="bg-[#4a90a4] hover:bg-[#3d7a8b] text-white px-8 py-4 rounded-lg font-semibold transition-colors shadow-lg whitespace-nowrap">
+              Request a Quote
+            </button>
+          </div>
         </div>
       </section>
 
