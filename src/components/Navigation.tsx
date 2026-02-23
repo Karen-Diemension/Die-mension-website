@@ -18,13 +18,18 @@ export default function Navigation() {
     <nav className="bg-[#2d2d2d] sticky top-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center">
-            <img
-              src="/images/Nanobanana-logo.png"
-              alt="Die-Mension Corporation"
-              className="h-12"
-              style={{ mixBlendMode: 'lighten' }}
-            />
+          <Link to="/">
+            <div>
+              <img
+                src="/images/Nanobanana-logo.png"
+                alt="Die-Mension Corporation"
+                className="h-12"
+                style={{
+                  mixBlendMode: 'screen',
+                  filter: 'brightness(1.1) contrast(1.1)'
+                }}
+              />
+            </div>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
