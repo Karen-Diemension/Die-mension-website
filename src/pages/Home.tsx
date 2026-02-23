@@ -79,12 +79,12 @@ export default function Home() {
               <p className="text-dm-muted">Line Card PDF Viewer</p>
             </div>
             <a
-              href="/documents/Line Card Tri.pdf"
+              href="/documents/Line_Card_Tri.pdf"
               download
               className="inline-flex items-center gap-2 text-gold-dark hover:text-gold-darker transition-colors"
             >
               <Download className="w-5 h-5" />
-              <span>Download PDF</span>
+              <span>Download Line Card PDF</span>
             </a>
           </div>
 
@@ -184,7 +184,7 @@ export default function Home() {
               className="h-24 object-contain"
             />
             <img
-              src="/images/SCB ISO 9001 Mark.jpg"
+              src="/images/SCB-ISO-9001-Mark.jpg"
               alt="SCB ISO 9001"
               className="h-24 object-contain"
             />
