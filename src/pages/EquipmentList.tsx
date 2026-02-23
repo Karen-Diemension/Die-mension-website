@@ -46,7 +46,7 @@ export default function EquipmentList() {
     <div>
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600"
+          src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1600"
           alt="equipment list"
           className="absolute inset-0 w-full h-full object-cover"
         />

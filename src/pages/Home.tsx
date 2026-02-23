@@ -18,11 +18,11 @@ export default function Home() {
 
   return (
     <div>
-      <section className="w-full h-screen overflow-hidden">
+      <section className="w-full overflow-hidden">
         <img
           src="/images/IMG_9770.jpg"
           alt="Die-Mension Corporation Headquarters"
-          className="w-full h-full object-contain object-center bg-gray-100"
+          className="w-full h-auto object-contain object-center"
         />
       </section>
 
