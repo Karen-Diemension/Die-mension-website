@@ -18,21 +18,23 @@ export default function Home() {
 
   return (
     <div>
-      <section className="relative h-[70vh] flex items-end overflow-hidden">
+      <section className="w-full h-screen overflow-hidden">
         <img
           src="/images/IMG_9770.jpg"
           alt="Die-Mension Corporation Headquarters"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-8">
-          <h1 className="text-white text-4xl md:text-5xl font-bold mb-2 drop-shadow-lg">
+      </section>
+
+      <section className="bg-[#2d2d2d] py-8 px-6">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-8">
+          <h1 className="text-white text-3xl font-bold whitespace-nowrap">
             Precision Engineering Since 1986
           </h1>
-          <p className="text-white/95 text-lg mb-6 drop-shadow-lg max-w-xl">
+          <p className="text-white/90 text-base flex-1">
             Expert tool and die design, build & repair, precision machining, and metal stampings
           </p>
-          <button className="bg-[#4a90a4] hover:bg-[#3d7a8b] text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-lg">
+          <button className="bg-[#4a90a4] hover:bg-[#3d7a8b] text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-lg whitespace-nowrap">
             Request a Quote
           </button>
         </div>
