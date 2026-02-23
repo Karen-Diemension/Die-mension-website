@@ -18,18 +18,18 @@ export default function Home() {
 
   return (
     <div>
-      <section className="relative h-[60vh] flex items-center overflow-hidden">
+      <section className="relative h-[70vh] flex items-end overflow-hidden">
         <img
-          src="/images/Gemini_Generated_Image_index-header.png"
+          src="/images/IMG_9770.jpeg"
           alt="Die-Mension Corporation Headquarters"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30"></div>
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6">
-          <h1 className="text-white text-5xl md:text-6xl font-bold mb-6 max-w-3xl">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-12">
+          <h1 className="text-white text-5xl md:text-6xl font-bold mb-4 max-w-3xl">
             Precision Engineering Since 1986
           </h1>
-          <p className="text-white/90 text-xl mb-8 max-w-2xl">
+          <p className="text-white/95 text-xl mb-8 max-w-2xl">
             Expert tool and die design, build & repair, precision machining, and metal stampings
           </p>
           <button className="bg-[#4a90a4] hover:bg-[#3d7a8b] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg">
