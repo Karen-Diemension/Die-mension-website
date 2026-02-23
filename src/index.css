@@ -1,17 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply font-source text-dm-body bg-white;
+    @apply font-sans text-dm-body bg-white;
   }
 
-  h1, h2 {
-    @apply font-cinzel font-normal;
-  }
-
-  h3 {
-    @apply font-source font-normal;
+  h1, h2, h3 {
+    @apply font-sans font-bold tracking-tight;
   }
 }

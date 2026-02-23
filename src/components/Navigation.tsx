@@ -15,7 +15,7 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-[#2d3436] sticky top-0 z-50 shadow-lg">
+    <nav className="bg-gray-800 sticky top-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
@@ -31,9 +31,9 @@ export default function Navigation() {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`font-source text-white transition-colors ${
+                className={`font-sans text-sm font-medium text-white transition-colors ${
                   location.pathname === item.path
-                    ? 'font-semibold'
+                    ? 'border-b-2 border-[#4a90a4]'
                     : 'hover:text-gray-300'
                 }`}
               >
@@ -52,16 +52,16 @@ export default function Navigation() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#1e2426]">
+        <div className="md:hidden bg-gray-900">
           <div className="px-6 py-4 space-y-3">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block font-source text-white transition-colors ${
+                className={`block font-sans text-sm font-medium text-white transition-colors ${
                   location.pathname === item.path
-                    ? 'font-semibold'
+                    ? 'text-[#4a90a4]'
                     : 'hover:text-gray-300'
                 }`}
               >

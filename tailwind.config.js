@@ -25,8 +25,7 @@ export default {
         separator: '#E2E2E2',
       },
       fontFamily: {
-        cinzel: ['Cinzel', 'Georgia', 'serif'],
-        source: ['Source Sans Pro', 'Arial', 'sans-serif'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       letterSpacing: {
         button: '1px',
