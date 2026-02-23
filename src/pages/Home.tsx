@@ -1,4 +1,4 @@
-import { Download } from 'lucide-react';
+import { Download, Award, Clock, Shield } from 'lucide-react';
 
 export default function Home() {
   const teamMembers = [
@@ -18,20 +18,45 @@ export default function Home() {
 
   return (
     <div>
-      <section className="relative h-[60vh] flex items-end overflow-hidden">
+      <section className="relative h-[60vh] flex items-center overflow-hidden">
         <img
           src="/images/Gemini_Generated_Image_index-header.png"
           alt="Die-Mension Corporation Headquarters"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-dm-dark/60 to-transparent"></div>
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-12">
-          <h1 className="text-white text-3xl md:text-4xl mb-4 max-w-3xl">
-            TOOL AND DIE DESIGN, BUILD & REPAIR, MACHINED DETAILS AND, METAL STAMPINGS
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30"></div>
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6">
+          <h1 className="text-white text-5xl md:text-6xl font-bold mb-6 max-w-3xl">
+            Precision Engineering Since 1986
           </h1>
-          <p className="text-white text-lg">
-            3020 Nationwide Pkwy. Brunswick, Ohio 44212
+          <p className="text-white/90 text-xl mb-8 max-w-2xl">
+            Expert tool and die design, build & repair, precision machining, and metal stampings
           </p>
+          <button className="bg-[#4a90a4] hover:bg-[#3d7a8b] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg">
+            Request a Quote
+          </button>
+        </div>
+      </section>
+
+      <section className="bg-[#2d3436] py-8 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="flex flex-col items-center gap-3">
+              <Clock className="w-12 h-12 text-[#4a90a4]" />
+              <h3 className="text-white text-3xl font-bold">35+ Years</h3>
+              <p className="text-gray-300">Experience</p>
+            </div>
+            <div className="flex flex-col items-center gap-3">
+              <Shield className="w-12 h-12 text-[#4a90a4]" />
+              <h3 className="text-white text-3xl font-bold">ISO 9001:2015</h3>
+              <p className="text-gray-300">Certified</p>
+            </div>
+            <div className="flex flex-col items-center gap-3">
+              <Award className="w-12 h-12 text-[#4a90a4]" />
+              <h3 className="text-white text-3xl font-bold">WBENC</h3>
+              <p className="text-gray-300">Certified</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -74,21 +99,7 @@ export default function Home() {
             OUR RANGE OF CAPABILITIES IN TOOL AND DIE, MACHINING & METAL STAMPING
           </p>
 
-          <div className="bg-white p-8 rounded-lg shadow-md mb-6">
-            <div className="aspect-[8.5/11] bg-surface-light flex items-center justify-center mb-4">
-              <p className="text-dm-muted">Line Card PDF Viewer</p>
-            </div>
-            <a
-              href="/documents/Line_Card_Tri.pdf"
-              download
-              className="inline-flex items-center gap-2 text-gold-dark hover:text-gold-darker transition-colors"
-            >
-              <Download className="w-5 h-5" />
-              <span>Download Line Card PDF</span>
-            </a>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 text-sm text-dm-body">
+          <div className="grid md:grid-cols-2 gap-8 mb-8 text-sm text-dm-body">
             <div>
               <h3 className="font-semibold text-lg text-dm-dark mb-4">Die Build and Repair Services</h3>
               <ul className="space-y-2">
@@ -122,6 +133,17 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="flex justify-center mt-8">
+            <a
+              href="/documents/Line_Card_Tri.pdf"
+              download
+              className="inline-flex items-center gap-3 bg-[#4a90a4] hover:bg-[#3d7a8b] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg"
+            >
+              <Download className="w-6 h-6" />
+              <span>Download Complete Line Card</span>
+            </a>
+          </div>
+
           <p className="text-dm-body mt-8 text-center leading-relaxed">
             From concept through completion….. Die-Mension can design, engineer, prototype, and mass produce parts
             to your exact standards. We specialize in die building, die repair, precision machining, wire EDM, jig
@@ -140,21 +162,21 @@ export default function Home() {
             <div className="flex-1 h-px bg-separator"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {teamMembers.map((member) => (
-              <div key={member.name} className="text-center">
+              <div key={member.name} className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
                 <div className="relative inline-block mb-6">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-48 h-48 rounded-full object-cover border-8 border-gold"
+                    className="w-48 h-48 rounded-full object-cover border-4 border-[#4a90a4]"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-dm-dark mb-1">{member.name}</h3>
-                <p className="text-dm-body mb-3">{member.title}</p>
+                <h3 className="text-2xl font-bold text-dm-dark mb-2">{member.name}</h3>
+                <p className="text-lg text-dm-body mb-4">{member.title}</p>
                 <a
                   href={`mailto:${member.email}`}
-                  className="text-gold-dark hover:text-gold-darker transition-colors"
+                  className="text-[#4a90a4] hover:text-[#3d7a8b] transition-colors font-medium"
                 >
                   {member.email}
                 </a>

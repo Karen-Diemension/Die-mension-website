@@ -15,7 +15,7 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-gold sticky top-0 z-50">
+    <nav className="bg-[#2d3436] sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
@@ -31,10 +31,10 @@ export default function Navigation() {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`font-source text-dm-warm transition-colors ${
+                className={`font-source text-white transition-colors ${
                   location.pathname === item.path
                     ? 'font-semibold'
-                    : 'hover:text-dm-dark'
+                    : 'hover:text-gray-300'
                 }`}
               >
                 {item.label}
@@ -43,7 +43,7 @@ export default function Navigation() {
           </div>
 
           <button
-            className="md:hidden text-dm-warm"
+            className="md:hidden text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -52,7 +52,7 @@ export default function Navigation() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-dm-darker">
+        <div className="md:hidden bg-[#1e2426]">
           <div className="px-6 py-4 space-y-3">
             {navItems.map((item) => (
               <Link
@@ -62,7 +62,7 @@ export default function Navigation() {
                 className={`block font-source text-white transition-colors ${
                   location.pathname === item.path
                     ? 'font-semibold'
-                    : 'hover:text-gold'
+                    : 'hover:text-gray-300'
                 }`}
               >
                 {item.label}
