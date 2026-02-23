@@ -21,7 +21,7 @@ export default function Navigation() {
           <Link to="/">
             <div>
               <img
-                src="/images/Nanobanana-logo.png"
+                src="/images/Nanobanana-logo-removebg-preview.png"
                 alt="Die-Mension Corporation"
                 className="h-12"
               />
