@@ -44,62 +44,66 @@ export default function EquipmentList() {
 
   return (
     <div>
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img
           src="/images/Gemini_Generated_Image_91dwss91dwss91dw.png"
           alt="equipment list"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-dm-dark/50"></div>
-        <div className="relative z-10 text-center">
-          <h1 className="text-white text-5xl lowercase">equipment list</h1>
+        <div className="absolute inset-0 bg-gradient-to-b from-dm-dark/70 via-dm-dark/50 to-dm-dark/70"></div>
+        <div className="relative z-10 text-center px-6">
+          <h1 className="text-white text-6xl font-extrabold mb-4 uppercase">Equipment List</h1>
+          <div className="h-1 w-32 bg-gradient-to-r from-[#4a90a4] to-[#3d7a8b] rounded-full mx-auto"></div>
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-white">
+      <section className="section-padding bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="flex-1 h-px bg-separator"></div>
-            <h2 className="text-3xl text-dm-dark text-center">TOOL ROOM</h2>
-            <div className="flex-1 h-px bg-separator"></div>
+          <div className="text-center mb-12">
+            <h2 className="text-5xl font-extrabold text-dm-dark mb-4">TOOL ROOM</h2>
+            <div className="h-1 w-24 bg-gradient-to-r from-[#4a90a4] to-[#3d7a8b] rounded-full mx-auto"></div>
           </div>
 
-          <ul className="space-y-3 text-dm-body">
-            {toolRoom.map((item, index) => (
-              <li key={index} className="flex gap-3">
-                <span className="text-gold-dark">•</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="bg-white rounded-2xl shadow-xl p-10 border border-gray-100">
+            <ul className="grid md:grid-cols-2 gap-4 text-dm-body">
+              {toolRoom.map((item, index) => (
+                <li key={index} className="flex gap-3 py-3 border-b border-gray-100 hover:border-[#4a90a4] transition-all">
+                  <span className="text-[#4a90a4] font-bold">•</span>
+                  <span className="font-medium">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-surface-off">
+      <section className="section-padding bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="flex-1 h-px bg-separator"></div>
-            <h2 className="text-3xl text-dm-dark text-center">PRESS ROOM</h2>
-            <div className="flex-1 h-px bg-separator"></div>
+          <div className="text-center mb-12">
+            <h2 className="text-5xl font-extrabold text-dm-dark mb-4">PRESS ROOM</h2>
+            <div className="h-1 w-24 bg-gradient-to-r from-[#4a90a4] to-[#3d7a8b] rounded-full mx-auto"></div>
           </div>
 
-          <ul className="space-y-3 text-dm-body">
-            {pressRoom.map((item, index) => (
-              <li key={index} className="flex gap-3">
-                <span className="text-gold-dark">•</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl p-10 border border-gray-100">
+            <ul className="space-y-4 text-dm-body">
+              {pressRoom.map((item, index) => (
+                <li key={index} className="flex gap-3 py-4 border-b border-gray-100 hover:border-[#4a90a4] transition-all">
+                  <span className="text-[#4a90a4] font-bold">•</span>
+                  <span className="font-medium text-lg">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-dm-dark text-white">
+      <section className="section-padding bg-gradient-to-br from-gray-900 via-[#2d2d2d] to-gray-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl mb-4">EXPERIENCED. COMMITTED. DEDICATED.</h2>
-          <p className="text-2xl text-gold">
+          <h2 className="text-4xl font-extrabold mb-6">EXPERIENCED. COMMITTED. DEDICATED.</h2>
+          <div className="h-1 w-24 bg-gradient-to-r from-[#4a90a4] to-[#3d7a8b] rounded-full mx-auto mb-6"></div>
+          <p className="text-3xl font-bold">
             CALL DIE-MENSION TODAY!{' '}
-            <a href="tel:3302735872" className="hover:text-gold-light transition-colors">
+            <a href="tel:3302735872" className="text-[#4a90a4] hover:text-[#3d7a8b] transition-colors">
               330-273-5872
             </a>
           </p>

@@ -42,35 +42,34 @@ export default function Careers() {
 
   return (
     <div>
-      <section className="py-16 px-6 bg-white">
+      <section className="section-padding bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-4 mb-12">
-            <div className="flex-1 h-px bg-separator"></div>
-            <h1 className="text-4xl text-dm-dark text-center">seeking Press set up/Operator</h1>
-            <div className="flex-1 h-px bg-separator"></div>
+          <div className="text-center mb-12">
+            <h1 className="text-5xl font-extrabold text-dm-dark mb-4">Seeking Press Set Up / Operator</h1>
+            <div className="h-1 w-24 bg-gradient-to-r from-[#4a90a4] to-[#3d7a8b] rounded-full mx-auto"></div>
           </div>
 
-          <div className="bg-surface-off p-8 rounded-lg mb-8">
-            <div className="flex flex-wrap gap-6 text-dm-body mb-6">
-              <div>
-                <span className="font-semibold">Job Type:</span> Fulltime
+          <div className="bg-gradient-to-br from-[#4a90a4]/10 to-[#3d7a8b]/10 p-10 rounded-2xl mb-12 border-2 border-[#4a90a4]/20">
+            <div className="flex flex-wrap gap-8 text-dm-body mb-6 justify-center">
+              <div className="text-lg">
+                <span className="font-bold">Job Type:</span> <span className="font-semibold">Full-Time</span>
               </div>
-              <div>
-                <span className="font-semibold">Pay:</span> Competitive, Negotiable
+              <div className="text-lg">
+                <span className="font-bold">Pay:</span> <span className="font-semibold">Competitive, Negotiable</span>
               </div>
             </div>
-            <p className="text-dm-body">
-              <span className="font-semibold">Email completed application to:</span>{' '}
-              <a href="mailto:karen@diemension.com" className="text-gold-dark hover:text-gold-darker transition-colors">
+            <p className="text-dm-body text-lg text-center">
+              <span className="font-bold">Email completed application to:</span>{' '}
+              <a href="mailto:karen@diemension.com" className="text-[#4a90a4] hover:text-[#3d7a8b] font-bold transition-colors">
                 karen@diemension.com
               </a>
             </p>
           </div>
 
-          <div className="space-y-8">
-            <div>
-              <h2 className="text-2xl text-dm-dark mb-4">Overview</h2>
-              <p className="text-dm-body leading-relaxed">
+          <div className="space-y-10">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <h2 className="text-3xl font-extrabold text-dm-dark mb-6">Overview</h2>
+              <p className="text-dm-body leading-relaxed text-lg">
                 Die-Mension Corporation is seeking an experienced Press Set-Up / Operator to set up presses and
                 tooling for production for a variety of metal stamping jobs. The ideal candidate will have
                 experience in machine setups, blueprint reading, and quality inspection. If performance and growth
@@ -79,66 +78,66 @@ export default function Careers() {
               </p>
             </div>
 
-            <div>
-              <h2 className="text-2xl text-dm-dark mb-4">Responsibilities</h2>
-              <ul className="space-y-3">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <h2 className="text-3xl font-extrabold text-dm-dark mb-6">Responsibilities</h2>
+              <ul className="space-y-4">
                 {responsibilities.map((item, index) => (
-                  <li key={index} className="flex gap-3 text-dm-body">
-                    <span className="text-gold-dark flex-shrink-0">•</span>
+                  <li key={index} className="flex gap-3 text-dm-body text-lg">
+                    <span className="text-[#4a90a4] flex-shrink-0 font-bold">•</span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div>
-              <h2 className="text-2xl text-dm-dark mb-4">Qualifications</h2>
-              <ul className="space-y-3">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <h2 className="text-3xl font-extrabold text-dm-dark mb-6">Qualifications</h2>
+              <ul className="space-y-4">
                 {qualifications.map((item, index) => (
-                  <li key={index} className="flex gap-3 text-dm-body">
-                    <span className="text-gold-dark flex-shrink-0">•</span>
+                  <li key={index} className="flex gap-3 text-dm-body text-lg">
+                    <span className="text-[#4a90a4] flex-shrink-0 font-bold">•</span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div>
-              <h2 className="text-2xl text-dm-dark mb-4">Proficiencies</h2>
-              <ul className="grid md:grid-cols-2 gap-3">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <h2 className="text-3xl font-extrabold text-dm-dark mb-6">Proficiencies</h2>
+              <ul className="grid md:grid-cols-2 gap-4">
                 {proficiencies.map((item, index) => (
-                  <li key={index} className="flex gap-3 text-dm-body">
-                    <span className="text-gold-dark flex-shrink-0">•</span>
+                  <li key={index} className="flex gap-3 text-dm-body text-lg">
+                    <span className="text-[#4a90a4] flex-shrink-0 font-bold">•</span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div>
-              <h2 className="text-2xl text-dm-dark mb-4">Machines & Technologies</h2>
-              <p className="text-dm-body">Stamping Press (Bliss, Minster)</p>
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <h2 className="text-3xl font-extrabold text-dm-dark mb-4">Machines & Technologies</h2>
+              <p className="text-dm-body text-lg font-medium">Stamping Press (Bliss, Minster)</p>
             </div>
 
-            <div>
-              <h2 className="text-2xl text-dm-dark mb-4">Benefits</h2>
-              <ul className="space-y-3">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <h2 className="text-3xl font-extrabold text-dm-dark mb-6">Benefits</h2>
+              <ul className="space-y-4">
                 {benefits.map((item, index) => (
-                  <li key={index} className="flex gap-3 text-dm-body">
-                    <span className="text-gold-dark flex-shrink-0">•</span>
+                  <li key={index} className="flex gap-3 text-dm-body text-lg">
+                    <span className="text-[#4a90a4] flex-shrink-0 font-bold">•</span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="pt-6">
+            <div className="pt-8 text-center">
               <a
                 href="/documents/ApplicationforEmploymentpg1,2,3,4.pdf"
                 download
-                className="inline-flex items-center gap-3 px-8 py-4 border-2 border-dm-dark bg-white text-dm-dark font-source uppercase tracking-button text-sm hover:bg-dm-dark hover:text-white transition-all rounded-full"
+                className="btn-primary text-lg group"
               >
-                <Download className="w-5 h-5" />
+                <Download className="w-6 h-6 group-hover:scale-110 transition-transform" />
                 DOWNLOAD APPLICATION (PDF)
               </a>
             </div>

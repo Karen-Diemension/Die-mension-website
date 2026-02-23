@@ -15,31 +15,34 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-[#1a1f2e] sticky top-0 z-50 shadow-md">
+    <nav className="bg-gradient-to-r from-[#1a1f2e] via-[#232833] to-[#1a1f2e] sticky top-0 z-50 shadow-xl border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/">
+        <div className="flex items-center justify-between h-20">
+          <Link to="/" className="transform hover:scale-105 transition-transform">
             <div>
               <img
                 src="/images/Nanobanana-logo-removebg-preview.png"
                 alt="Die-Mension Corporation"
-                className="h-12"
+                className="h-14"
               />
             </div>
           </Link>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`font-sans text-sm font-medium text-white transition-colors ${
+                className={`font-sans text-sm font-bold text-white transition-all relative group ${
                   location.pathname === item.path
-                    ? 'border-b-2 border-[#4a90a4]'
-                    : 'hover:text-gray-300'
+                    ? 'text-[#4a90a4]'
+                    : 'hover:text-[#4a90a4]'
                 }`}
               >
                 {item.label}
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-[#4a90a4] to-[#3d7a8b] transition-all ${
+                  location.pathname === item.path ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}></span>
               </Link>
             ))}
           </div>
@@ -54,17 +57,17 @@ export default function Navigation() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#1a1f2e]">
-          <div className="px-6 py-4 space-y-3">
+        <div className="md:hidden bg-gradient-to-b from-[#1a1f2e] to-[#232833] border-t border-white/10">
+          <div className="px-6 py-6 space-y-4">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block font-sans text-sm font-medium text-white transition-colors ${
+                className={`block font-sans text-base font-bold text-white transition-colors py-2 ${
                   location.pathname === item.path
                     ? 'text-[#4a90a4]'
-                    : 'hover:text-gray-300'
+                    : 'hover:text-[#4a90a4]'
                 }`}
               >
                 {item.label}
