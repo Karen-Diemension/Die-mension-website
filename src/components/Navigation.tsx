@@ -17,13 +17,13 @@ export default function Navigation() {
   return (
     <nav className="bg-gradient-to-r from-[#1a1f2e] via-[#232833] to-[#1a1f2e] sticky top-0 z-50 shadow-xl border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24 md:h-28">
           <Link to="/" className="transform hover:scale-105 transition-transform">
             <div>
               <img
                 src="/images/Nanobanana-logo-removebg-preview.png"
                 alt="Die-Mension Corporation"
-                className="h-14"
+                className="h-20 md:h-24"
               />
             </div>
           </Link>
