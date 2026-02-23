@@ -5,7 +5,7 @@ export default function ContactUs() {
     <div>
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="https://images.pexels.com/photos/4393426/pexels-photo-4393426.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Contact Die-Mension"
           className="absolute inset-0 w-full h-full object-cover"
         />
