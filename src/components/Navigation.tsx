@@ -23,6 +23,7 @@ export default function Navigation() {
               src="/images/Nanobanana-logo.png"
               alt="Die-Mension Corporation"
               className="h-12"
+              style={{ mixBlendMode: 'lighten' }}
             />
           </Link>
 
