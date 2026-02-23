@@ -15,7 +15,7 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-gray-800 sticky top-0 z-50 shadow-md">
+    <nav className="bg-[#2d2d2d] sticky top-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
@@ -52,7 +52,7 @@ export default function Navigation() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-gray-900">
+        <div className="md:hidden bg-[#2d2d2d]">
           <div className="px-6 py-4 space-y-3">
             {navItems.map((item) => (
               <Link
