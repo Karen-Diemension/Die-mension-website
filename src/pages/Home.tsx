@@ -6,13 +6,13 @@ export default function Home() {
       name: 'KAREN THOMPSON',
       title: 'President',
       email: 'karen@diemension.com',
-      image: '/images/Profile Pic-0003.jpg'
+      image: '/images/Profile-Pic-0003-Karen-Thompson.jpg'
     },
     {
       name: 'RICK THOMPSON',
       title: 'Vice President',
       email: 'rick@diemension.com',
-      image: '/images/Rick Thompson picture.jpg'
+      image: '/images/Rick-Thompson-picture.jpg'
     }
   ];
 
@@ -20,7 +20,7 @@ export default function Home() {
     <div>
       <section className="relative h-[60vh] flex items-end overflow-hidden">
         <img
-          src="/images/index-header.jpg"
+          src="/images/Gemini_Generated_Image_index-header.png"
           alt="Die-Mension Corporation Headquarters"
           className="absolute inset-0 w-full h-full object-cover"
         />
